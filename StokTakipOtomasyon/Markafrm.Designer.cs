@@ -74,12 +74,14 @@ namespace StokTakipOtomasyon
             // 
             // btnEkle
             // 
+            this.btnEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnEkle.Location = new System.Drawing.Point(197, 94);
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.Size = new System.Drawing.Size(75, 23);
             this.btnEkle.TabIndex = 4;
             this.btnEkle.Text = "Ekle";
             this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // button1
             // 
@@ -97,7 +99,7 @@ namespace StokTakipOtomasyon
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(342, 205);
+            this.ClientSize = new System.Drawing.Size(367, 207);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnEkle);
             this.Controls.Add(this.txtMarka);
