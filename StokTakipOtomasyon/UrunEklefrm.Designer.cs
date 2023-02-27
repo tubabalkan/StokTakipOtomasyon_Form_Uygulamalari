@@ -47,13 +47,13 @@ namespace StokTakipOtomasyon
             this.label4 = new System.Windows.Forms.Label();
             this.grpVarOlanUrun = new System.Windows.Forms.GroupBox();
             this.btnVarOlanUrunEkle = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.SatisFiyatitxt = new System.Windows.Forms.TextBox();
+            this.AlisFiyatitxt = new System.Windows.Forms.TextBox();
+            this.Miktaritxt = new System.Windows.Forms.TextBox();
+            this.UrunAditxt = new System.Windows.Forms.TextBox();
+            this.Markatxt = new System.Windows.Forms.TextBox();
+            this.Kategoritxt = new System.Windows.Forms.TextBox();
+            this.BarkodNotxt = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -98,6 +98,7 @@ namespace StokTakipOtomasyon
             this.btnYeniUrunEkle.TabIndex = 21;
             this.btnYeniUrunEkle.Text = "Ekle";
             this.btnYeniUrunEkle.UseVisualStyleBackColor = true;
+            this.btnYeniUrunEkle.Click += new System.EventHandler(this.btnYeniUrunEkle_Click);
             // 
             // txtMiktarı
             // 
@@ -155,6 +156,7 @@ namespace StokTakipOtomasyon
             this.comboKategori.Name = "comboKategori";
             this.comboKategori.Size = new System.Drawing.Size(139, 21);
             this.comboKategori.TabIndex = 8;
+            this.comboKategori.SelectedIndexChanged += new System.EventHandler(this.comboKategori_SelectedIndexChanged);
             // 
             // txtBarkodNo
             // 
@@ -223,13 +225,13 @@ namespace StokTakipOtomasyon
             // grpVarOlanUrun
             // 
             this.grpVarOlanUrun.Controls.Add(this.btnVarOlanUrunEkle);
-            this.grpVarOlanUrun.Controls.Add(this.textBox7);
-            this.grpVarOlanUrun.Controls.Add(this.textBox6);
-            this.grpVarOlanUrun.Controls.Add(this.textBox5);
-            this.grpVarOlanUrun.Controls.Add(this.textBox4);
-            this.grpVarOlanUrun.Controls.Add(this.textBox3);
-            this.grpVarOlanUrun.Controls.Add(this.textBox2);
-            this.grpVarOlanUrun.Controls.Add(this.textBox1);
+            this.grpVarOlanUrun.Controls.Add(this.SatisFiyatitxt);
+            this.grpVarOlanUrun.Controls.Add(this.AlisFiyatitxt);
+            this.grpVarOlanUrun.Controls.Add(this.Miktaritxt);
+            this.grpVarOlanUrun.Controls.Add(this.UrunAditxt);
+            this.grpVarOlanUrun.Controls.Add(this.Markatxt);
+            this.grpVarOlanUrun.Controls.Add(this.Kategoritxt);
+            this.grpVarOlanUrun.Controls.Add(this.BarkodNotxt);
             this.grpVarOlanUrun.Controls.Add(this.label10);
             this.grpVarOlanUrun.Controls.Add(this.label12);
             this.grpVarOlanUrun.Controls.Add(this.label14);
@@ -253,54 +255,54 @@ namespace StokTakipOtomasyon
             this.btnVarOlanUrunEkle.Text = "Ekle";
             this.btnVarOlanUrunEkle.UseVisualStyleBackColor = true;
             // 
-            // textBox7
+            // SatisFiyatitxt
             // 
-            this.textBox7.Location = new System.Drawing.Point(87, 175);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(152, 20);
-            this.textBox7.TabIndex = 20;
+            this.SatisFiyatitxt.Location = new System.Drawing.Point(87, 175);
+            this.SatisFiyatitxt.Name = "SatisFiyatitxt";
+            this.SatisFiyatitxt.Size = new System.Drawing.Size(152, 20);
+            this.SatisFiyatitxt.TabIndex = 20;
             // 
-            // textBox6
+            // AlisFiyatitxt
             // 
-            this.textBox6.Location = new System.Drawing.Point(87, 149);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(152, 20);
-            this.textBox6.TabIndex = 19;
+            this.AlisFiyatitxt.Location = new System.Drawing.Point(87, 149);
+            this.AlisFiyatitxt.Name = "AlisFiyatitxt";
+            this.AlisFiyatitxt.Size = new System.Drawing.Size(152, 20);
+            this.AlisFiyatitxt.TabIndex = 19;
             // 
-            // textBox5
+            // Miktaritxt
             // 
-            this.textBox5.Location = new System.Drawing.Point(87, 123);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(152, 20);
-            this.textBox5.TabIndex = 18;
+            this.Miktaritxt.Location = new System.Drawing.Point(87, 123);
+            this.Miktaritxt.Name = "Miktaritxt";
+            this.Miktaritxt.Size = new System.Drawing.Size(152, 20);
+            this.Miktaritxt.TabIndex = 18;
             // 
-            // textBox4
+            // UrunAditxt
             // 
-            this.textBox4.Location = new System.Drawing.Point(87, 97);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(152, 20);
-            this.textBox4.TabIndex = 17;
+            this.UrunAditxt.Location = new System.Drawing.Point(87, 97);
+            this.UrunAditxt.Name = "UrunAditxt";
+            this.UrunAditxt.Size = new System.Drawing.Size(152, 20);
+            this.UrunAditxt.TabIndex = 17;
             // 
-            // textBox3
+            // Markatxt
             // 
-            this.textBox3.Location = new System.Drawing.Point(87, 70);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(152, 20);
-            this.textBox3.TabIndex = 16;
+            this.Markatxt.Location = new System.Drawing.Point(87, 70);
+            this.Markatxt.Name = "Markatxt";
+            this.Markatxt.Size = new System.Drawing.Size(152, 20);
+            this.Markatxt.TabIndex = 16;
             // 
-            // textBox2
+            // Kategoritxt
             // 
-            this.textBox2.Location = new System.Drawing.Point(87, 43);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(152, 20);
-            this.textBox2.TabIndex = 15;
+            this.Kategoritxt.Location = new System.Drawing.Point(87, 43);
+            this.Kategoritxt.Name = "Kategoritxt";
+            this.Kategoritxt.Size = new System.Drawing.Size(152, 20);
+            this.Kategoritxt.TabIndex = 15;
             // 
-            // textBox1
+            // BarkodNotxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(87, 17);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(152, 20);
-            this.textBox1.TabIndex = 14;
+            this.BarkodNotxt.Location = new System.Drawing.Point(87, 17);
+            this.BarkodNotxt.Name = "BarkodNotxt";
+            this.BarkodNotxt.Size = new System.Drawing.Size(152, 20);
+            this.BarkodNotxt.TabIndex = 14;
             // 
             // label10
             // 
@@ -424,13 +426,13 @@ namespace StokTakipOtomasyon
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox grpVarOlanUrun;
         private System.Windows.Forms.Button btnVarOlanUrunEkle;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox SatisFiyatitxt;
+        private System.Windows.Forms.TextBox AlisFiyatitxt;
+        private System.Windows.Forms.TextBox Miktaritxt;
+        private System.Windows.Forms.TextBox UrunAditxt;
+        private System.Windows.Forms.TextBox Markatxt;
+        private System.Windows.Forms.TextBox Kategoritxt;
+        private System.Windows.Forms.TextBox BarkodNotxt;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label14;
