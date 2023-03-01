@@ -55,14 +55,14 @@ namespace StokTakipOtomasyon
             this.label9 = new System.Windows.Forms.Label();
             this.lblGenelToplam = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnKategori = new System.Windows.Forms.Button();
+            this.btnMarka = new System.Windows.Forms.Button();
             this.btnSatisListele = new System.Windows.Forms.Button();
             this.btnUrunListeleme = new System.Windows.Forms.Button();
             this.btnUrunEkle = new System.Windows.Forms.Button();
             this.btnMusteriListele = new System.Windows.Forms.Button();
             this.btnMusteriEkle = new System.Windows.Forms.Button();
             this.btnIptal = new System.Windows.Forms.Button();
-            this.btnMarka = new System.Windows.Forms.Button();
-            this.btnKategori = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.grpMusteriIslem.SuspendLayout();
             this.grpUrunIslem.SuspendLayout();
@@ -322,6 +322,28 @@ namespace StokTakipOtomasyon
             this.panel1.Size = new System.Drawing.Size(758, 149);
             this.panel1.TabIndex = 8;
             // 
+            // btnKategori
+            // 
+            this.btnKategori.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnKategori.Location = new System.Drawing.Point(124, 86);
+            this.btnKategori.Name = "btnKategori";
+            this.btnKategori.Size = new System.Drawing.Size(106, 45);
+            this.btnKategori.TabIndex = 6;
+            this.btnKategori.Text = "Kategori";
+            this.btnKategori.UseVisualStyleBackColor = true;
+            this.btnKategori.Click += new System.EventHandler(this.btnKategori_Click);
+            // 
+            // btnMarka
+            // 
+            this.btnMarka.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnMarka.Location = new System.Drawing.Point(6, 86);
+            this.btnMarka.Name = "btnMarka";
+            this.btnMarka.Size = new System.Drawing.Size(112, 45);
+            this.btnMarka.TabIndex = 5;
+            this.btnMarka.Text = "Marka";
+            this.btnMarka.UseVisualStyleBackColor = true;
+            this.btnMarka.Click += new System.EventHandler(this.btnMarka_Click);
+            // 
             // btnSatisListele
             // 
             this.btnSatisListele.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -341,6 +363,7 @@ namespace StokTakipOtomasyon
             this.btnUrunListeleme.TabIndex = 3;
             this.btnUrunListeleme.Text = "Ürün Listeleme";
             this.btnUrunListeleme.UseVisualStyleBackColor = true;
+            this.btnUrunListeleme.Click += new System.EventHandler(this.btnUrunListeleme_Click);
             // 
             // btnUrunEkle
             // 
@@ -385,28 +408,6 @@ namespace StokTakipOtomasyon
             this.btnIptal.UseVisualStyleBackColor = true;
             this.btnIptal.Click += new System.EventHandler(this.btnIptal_Click);
             // 
-            // btnMarka
-            // 
-            this.btnMarka.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnMarka.Location = new System.Drawing.Point(6, 86);
-            this.btnMarka.Name = "btnMarka";
-            this.btnMarka.Size = new System.Drawing.Size(112, 45);
-            this.btnMarka.TabIndex = 5;
-            this.btnMarka.Text = "Marka";
-            this.btnMarka.UseVisualStyleBackColor = true;
-            this.btnMarka.Click += new System.EventHandler(this.btnMarka_Click);
-            // 
-            // btnKategori
-            // 
-            this.btnKategori.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnKategori.Location = new System.Drawing.Point(124, 86);
-            this.btnKategori.Name = "btnKategori";
-            this.btnKategori.Size = new System.Drawing.Size(106, 45);
-            this.btnKategori.TabIndex = 6;
-            this.btnKategori.Text = "Kategori";
-            this.btnKategori.UseVisualStyleBackColor = true;
-            this.btnKategori.Click += new System.EventHandler(this.btnKategori_Click);
-            // 
             // Satisfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -427,6 +428,7 @@ namespace StokTakipOtomasyon
             this.Name = "Satisfrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Satış Sayfası";
+            this.Load += new System.EventHandler(this.Satisfrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.grpMusteriIslem.ResumeLayout(false);
             this.grpMusteriIslem.PerformLayout();
