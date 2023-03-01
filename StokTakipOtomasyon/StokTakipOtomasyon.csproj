@@ -89,6 +89,12 @@
     <Compile Include="UrunEklefrm.Designer.cs">
       <DependentUpon>UrunEklefrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UrunListelemefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunListelemefrm.Designer.cs">
+      <DependentUpon>UrunListelemefrm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Kategorifrm.resx">
       <DependentUpon>Kategorifrm.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +121,9 @@
     </Compile>
     <EmbeddedResource Include="UrunEklefrm.resx">
       <DependentUpon>UrunEklefrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunListelemefrm.resx">
+      <DependentUpon>UrunListelemefrm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
