@@ -46,6 +46,7 @@ namespace StokTakipOtomasyon
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.grpVarOlanUrun = new System.Windows.Forms.GroupBox();
+            this.lblMiktari = new System.Windows.Forms.Label();
             this.btnVarOlanUrunEkle = new System.Windows.Forms.Button();
             this.SatisFiyatitxt = new System.Windows.Forms.TextBox();
             this.AlisFiyatitxt = new System.Windows.Forms.TextBox();
@@ -89,6 +90,7 @@ namespace StokTakipOtomasyon
             this.grpYeniUrun.TabIndex = 0;
             this.grpYeniUrun.TabStop = false;
             this.grpYeniUrun.Text = "Yeni Ürün";
+            this.grpYeniUrun.Enter += new System.EventHandler(this.grpYeniUrun_Enter);
             // 
             // btnYeniUrunEkle
             // 
@@ -224,6 +226,7 @@ namespace StokTakipOtomasyon
             // 
             // grpVarOlanUrun
             // 
+            this.grpVarOlanUrun.Controls.Add(this.lblMiktari);
             this.grpVarOlanUrun.Controls.Add(this.btnVarOlanUrunEkle);
             this.grpVarOlanUrun.Controls.Add(this.SatisFiyatitxt);
             this.grpVarOlanUrun.Controls.Add(this.AlisFiyatitxt);
@@ -246,6 +249,14 @@ namespace StokTakipOtomasyon
             this.grpVarOlanUrun.TabStop = false;
             this.grpVarOlanUrun.Text = "Var Olan Ürün";
             // 
+            // lblMiktari
+            // 
+            this.lblMiktari.AutoSize = true;
+            this.lblMiktari.Location = new System.Drawing.Point(35, 217);
+            this.lblMiktari.Name = "lblMiktari";
+            this.lblMiktari.Size = new System.Drawing.Size(0, 13);
+            this.lblMiktari.TabIndex = 23;
+            // 
             // btnVarOlanUrunEkle
             // 
             this.btnVarOlanUrunEkle.Location = new System.Drawing.Point(152, 201);
@@ -254,6 +265,7 @@ namespace StokTakipOtomasyon
             this.btnVarOlanUrunEkle.TabIndex = 22;
             this.btnVarOlanUrunEkle.Text = "Ekle";
             this.btnVarOlanUrunEkle.UseVisualStyleBackColor = true;
+            this.btnVarOlanUrunEkle.Click += new System.EventHandler(this.btnVarOlanUrunEkle_Click);
             // 
             // SatisFiyatitxt
             // 
@@ -303,6 +315,7 @@ namespace StokTakipOtomasyon
             this.BarkodNotxt.Name = "BarkodNotxt";
             this.BarkodNotxt.Size = new System.Drawing.Size(152, 20);
             this.BarkodNotxt.TabIndex = 14;
+            this.BarkodNotxt.TextChanged += new System.EventHandler(this.BarkodNotxt_TextChanged);
             // 
             // label10
             // 
@@ -441,5 +454,6 @@ namespace StokTakipOtomasyon
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnIptal;
+        private System.Windows.Forms.Label lblMiktari;
     }
 }
