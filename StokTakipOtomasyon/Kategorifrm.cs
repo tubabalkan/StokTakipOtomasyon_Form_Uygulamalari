@@ -18,6 +18,23 @@ namespace StokTakipOtomasyon
             InitializeComponent();
         }
         SqlConnection baglanti = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Stok_Takip;Integrated Security=True");
+        bool durum;
+        private void kategoriKontrol()
+        {
+            durum = true;
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("select * from kategoribilgileri", baglanti);
+            SqlDataReader read = komut.ExecuteReader();
+            while (read.Read())
+            {
+                if (txtKategori.Text == read["kategori"].ToString() || txtKategori.Text=="" )
+                {
+                    durum = false;
+                }
+            }
+            baglanti.Close();
+        }
+        
         private void btnIptal_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -25,12 +42,21 @@ namespace StokTakipOtomasyon
 
         private void btnEkle_Click(object sender, EventArgs e)
         {
+            kategoriKontrol();
+            if (durum == true)
+            {
             baglanti.Open();
             SqlCommand komut = new SqlCommand("insert into kategoribilgileri(kategori) values ('"+txtKategori.Text+"')", baglanti);
             komut.ExecuteNonQuery();
             baglanti.Close();
-            txtKategori.Text = "";
+            
             MessageBox.Show("Kategori Eklendi");
+            }
+            else
+            {
+                MessageBox.Show("Böyle bir kategori var", "Uyarı");
+            }
+            txtKategori.Text = "";
 
         }
 
