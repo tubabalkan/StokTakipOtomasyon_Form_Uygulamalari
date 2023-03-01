@@ -18,7 +18,22 @@ namespace StokTakipOtomasyon
             InitializeComponent();
         }
         SqlConnection baglanti = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Stok_Takip;Integrated Security=True");
-
+        bool durum;
+        private void markaKontrol()
+        {
+            durum = true;
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("select * from markabilgileri", baglanti);
+            SqlDataReader read = komut.ExecuteReader();
+            while (read.Read())
+            {
+                if (comboKategori.Text == read["kategori"].ToString() && txtMarka.Text == read["marka"].ToString() ||comboKategori.Text==""|| txtMarka.Text == "")
+                {
+                    durum = false;
+                }
+            }
+            baglanti.Close();
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -43,14 +58,23 @@ namespace StokTakipOtomasyon
 
         private void btnEkle_Click(object sender, EventArgs e)
         {
-            baglanti.Open();
+            markaKontrol();
+            if (durum==true)
+            {
+ baglanti.Open();
             SqlCommand komut = new SqlCommand("insert into markabilgileri(kategori, marka) values ('"+comboKategori.Text+"'   ,'" + txtMarka.Text + "')", baglanti);
             komut.ExecuteNonQuery();
             baglanti.Close();
-            txtMarka.Text = "";
-            comboKategori.Text = "";
+            
 
             MessageBox.Show("Marka Eklendi");
+            }
+            else
+            {
+                MessageBox.Show("Böyle bir kategori ve marka var", "Uyarı");
+            }
+            txtMarka.Text = "";
+            comboKategori.Text = "";
         }
     }
 }
