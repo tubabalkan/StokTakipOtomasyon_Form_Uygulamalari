@@ -144,6 +144,7 @@ namespace StokTakipOtomasyon
             this.txtTc.Name = "txtTc";
             this.txtTc.Size = new System.Drawing.Size(100, 21);
             this.txtTc.TabIndex = 0;
+            this.txtTc.TextChanged += new System.EventHandler(this.txtTc_TextChanged);
             // 
             // grpUrunIslem
             // 
@@ -228,6 +229,7 @@ namespace StokTakipOtomasyon
             this.txtSatisFiyati.Name = "txtSatisFiyati";
             this.txtSatisFiyati.Size = new System.Drawing.Size(100, 21);
             this.txtSatisFiyati.TabIndex = 6;
+            this.txtSatisFiyati.TextChanged += new System.EventHandler(this.txtSatisFiyati_TextChanged);
             // 
             // txtMiktari
             // 
@@ -235,6 +237,9 @@ namespace StokTakipOtomasyon
             this.txtMiktari.Name = "txtMiktari";
             this.txtMiktari.Size = new System.Drawing.Size(100, 21);
             this.txtMiktari.TabIndex = 5;
+            this.txtMiktari.Text = "1";
+            this.txtMiktari.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtMiktari.TextChanged += new System.EventHandler(this.txtMiktari_TextChanged);
             // 
             // UrunAdi
             // 
@@ -249,6 +254,7 @@ namespace StokTakipOtomasyon
             this.txtBarkodNo.Name = "txtBarkodNo";
             this.txtBarkodNo.Size = new System.Drawing.Size(100, 21);
             this.txtBarkodNo.TabIndex = 3;
+            this.txtBarkodNo.TextChanged += new System.EventHandler(this.txtBarkodNo_TextChanged);
             // 
             // btnEkle
             // 
@@ -259,16 +265,18 @@ namespace StokTakipOtomasyon
             this.btnEkle.TabIndex = 2;
             this.btnEkle.Text = "Ekle";
             this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // btnSil
             // 
             this.btnSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSil.Location = new System.Drawing.Point(671, 115);
+            this.btnSil.Location = new System.Drawing.Point(671, 247);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(75, 37);
             this.btnSil.TabIndex = 3;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnSatisIptal
             // 
@@ -279,6 +287,7 @@ namespace StokTakipOtomasyon
             this.btnSatisIptal.TabIndex = 4;
             this.btnSatisIptal.Text = "Satış İptal";
             this.btnSatisIptal.UseVisualStyleBackColor = true;
+            this.btnSatisIptal.Click += new System.EventHandler(this.btnSatisIptal_Click);
             // 
             // btnSatisYap
             // 
@@ -289,6 +298,7 @@ namespace StokTakipOtomasyon
             this.btnSatisYap.TabIndex = 5;
             this.btnSatisYap.Text = "Satış Yap";
             this.btnSatisYap.UseVisualStyleBackColor = true;
+            this.btnSatisYap.Click += new System.EventHandler(this.btnSatisYap_Click);
             // 
             // label9
             // 
@@ -319,7 +329,7 @@ namespace StokTakipOtomasyon
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(758, 149);
+            this.panel1.Size = new System.Drawing.Size(758, 141);
             this.panel1.TabIndex = 8;
             // 
             // btnKategori
@@ -353,6 +363,7 @@ namespace StokTakipOtomasyon
             this.btnSatisListele.TabIndex = 4;
             this.btnSatisListele.Text = "Satışları Listeleme";
             this.btnSatisListele.UseVisualStyleBackColor = true;
+            this.btnSatisListele.Click += new System.EventHandler(this.btnSatisListele_Click);
             // 
             // btnUrunListeleme
             // 
@@ -410,6 +421,7 @@ namespace StokTakipOtomasyon
             // 
             // Satisfrm
             // 
+            this.AcceptButton = this.btnEkle;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
