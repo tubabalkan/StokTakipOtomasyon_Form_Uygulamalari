@@ -75,7 +75,7 @@ namespace StokTakipOtomasyon
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(212, 158);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(453, 241);
+            this.dataGridView1.Size = new System.Drawing.Size(509, 241);
             this.dataGridView1.TabIndex = 0;
             // 
             // grpMusteriIslem
@@ -270,7 +270,7 @@ namespace StokTakipOtomasyon
             // btnSil
             // 
             this.btnSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSil.Location = new System.Drawing.Point(671, 247);
+            this.btnSil.Location = new System.Drawing.Point(727, 247);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(75, 37);
             this.btnSil.TabIndex = 3;
@@ -281,7 +281,7 @@ namespace StokTakipOtomasyon
             // btnSatisIptal
             // 
             this.btnSatisIptal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSatisIptal.Location = new System.Drawing.Point(671, 158);
+            this.btnSatisIptal.Location = new System.Drawing.Point(727, 158);
             this.btnSatisIptal.Name = "btnSatisIptal";
             this.btnSatisIptal.Size = new System.Drawing.Size(75, 38);
             this.btnSatisIptal.TabIndex = 4;
@@ -292,7 +292,7 @@ namespace StokTakipOtomasyon
             // btnSatisYap
             // 
             this.btnSatisYap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSatisYap.Location = new System.Drawing.Point(671, 202);
+            this.btnSatisYap.Location = new System.Drawing.Point(727, 202);
             this.btnSatisYap.Name = "btnSatisYap";
             this.btnSatisYap.Size = new System.Drawing.Size(75, 39);
             this.btnSatisYap.TabIndex = 5;
@@ -329,15 +329,15 @@ namespace StokTakipOtomasyon
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(758, 141);
+            this.panel1.Size = new System.Drawing.Size(819, 141);
             this.panel1.TabIndex = 8;
             // 
             // btnKategori
             // 
             this.btnKategori.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnKategori.Location = new System.Drawing.Point(124, 86);
+            this.btnKategori.Location = new System.Drawing.Point(696, 23);
             this.btnKategori.Name = "btnKategori";
-            this.btnKategori.Size = new System.Drawing.Size(106, 45);
+            this.btnKategori.Size = new System.Drawing.Size(106, 57);
             this.btnKategori.TabIndex = 6;
             this.btnKategori.Text = "Kategori";
             this.btnKategori.UseVisualStyleBackColor = true;
@@ -346,9 +346,9 @@ namespace StokTakipOtomasyon
             // btnMarka
             // 
             this.btnMarka.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnMarka.Location = new System.Drawing.Point(6, 86);
+            this.btnMarka.Location = new System.Drawing.Point(578, 23);
             this.btnMarka.Name = "btnMarka";
-            this.btnMarka.Size = new System.Drawing.Size(112, 45);
+            this.btnMarka.Size = new System.Drawing.Size(112, 57);
             this.btnMarka.TabIndex = 5;
             this.btnMarka.Text = "Marka";
             this.btnMarka.UseVisualStyleBackColor = true;
@@ -425,7 +425,7 @@ namespace StokTakipOtomasyon
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(758, 481);
+            this.ClientSize = new System.Drawing.Size(819, 481);
             this.Controls.Add(this.btnIptal);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblGenelToplam);
