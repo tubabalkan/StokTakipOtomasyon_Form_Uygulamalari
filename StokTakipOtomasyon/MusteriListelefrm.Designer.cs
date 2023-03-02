@@ -29,6 +29,8 @@ namespace StokTakipOtomasyon
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MusteriListelefrm));
             this.btnGuncelle = new System.Windows.Forms.Button();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtAdres = new System.Windows.Forms.TextBox();
@@ -45,50 +47,57 @@ namespace StokTakipOtomasyon
             this.txtTcAra = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnIptal = new System.Windows.Forms.Button();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnGuncelle
             // 
-            this.btnGuncelle.Location = new System.Drawing.Point(13, 211);
+            this.btnGuncelle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnGuncelle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuncelle.ImageIndex = 0;
+            this.btnGuncelle.ImageList = this.ımageList1;
+            this.btnGuncelle.Location = new System.Drawing.Point(31, 166);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(100, 43);
             this.btnGuncelle.TabIndex = 21;
             this.btnGuncelle.Text = "Güncelle";
-            this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnGuncelle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGuncelle.UseVisualStyleBackColor = false;
             this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(84, 172);
+            this.txtEmail.Location = new System.Drawing.Point(84, 140);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(132, 20);
             this.txtEmail.TabIndex = 20;
             // 
             // txtAdres
             // 
-            this.txtAdres.Location = new System.Drawing.Point(84, 146);
+            this.txtAdres.Location = new System.Drawing.Point(84, 114);
             this.txtAdres.Name = "txtAdres";
             this.txtAdres.Size = new System.Drawing.Size(132, 20);
             this.txtAdres.TabIndex = 19;
             // 
             // txtTelefon
             // 
-            this.txtTelefon.Location = new System.Drawing.Point(84, 120);
+            this.txtTelefon.Location = new System.Drawing.Point(84, 88);
             this.txtTelefon.Name = "txtTelefon";
             this.txtTelefon.Size = new System.Drawing.Size(132, 20);
             this.txtTelefon.TabIndex = 18;
             // 
             // txtAdSoyad
             // 
-            this.txtAdSoyad.Location = new System.Drawing.Point(84, 94);
+            this.txtAdSoyad.Location = new System.Drawing.Point(84, 62);
             this.txtAdSoyad.Name = "txtAdSoyad";
             this.txtAdSoyad.Size = new System.Drawing.Size(132, 20);
             this.txtAdSoyad.TabIndex = 17;
             // 
             // txtTc
             // 
-            this.txtTc.Location = new System.Drawing.Point(84, 68);
+            this.txtTc.Location = new System.Drawing.Point(84, 36);
             this.txtTc.Name = "txtTc";
             this.txtTc.Size = new System.Drawing.Size(132, 20);
             this.txtTc.TabIndex = 16;
@@ -96,8 +105,9 @@ namespace StokTakipOtomasyon
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Silver;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(33, 173);
+            this.label5.Location = new System.Drawing.Point(33, 141);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 16);
             this.label5.TabIndex = 15;
@@ -106,8 +116,9 @@ namespace StokTakipOtomasyon
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Silver;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(34, 146);
+            this.label4.Location = new System.Drawing.Point(34, 114);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 16);
             this.label4.TabIndex = 14;
@@ -116,8 +127,9 @@ namespace StokTakipOtomasyon
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Silver;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(24, 121);
+            this.label3.Location = new System.Drawing.Point(24, 89);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 16);
             this.label3.TabIndex = 13;
@@ -126,8 +138,9 @@ namespace StokTakipOtomasyon
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Silver;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(10, 95);
+            this.label2.Location = new System.Drawing.Point(10, 63);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 16);
             this.label2.TabIndex = 12;
@@ -136,8 +149,9 @@ namespace StokTakipOtomasyon
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Silver;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(52, 69);
+            this.label1.Location = new System.Drawing.Point(52, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(26, 16);
             this.label1.TabIndex = 11;
@@ -145,23 +159,29 @@ namespace StokTakipOtomasyon
             // 
             // dataGridView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.Silver;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(222, 36);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(446, 267);
+            this.dataGridView1.Size = new System.Drawing.Size(487, 222);
             this.dataGridView1.TabIndex = 22;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // btnSil
             // 
-            this.btnSil.Location = new System.Drawing.Point(116, 211);
+            this.btnSil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSil.ImageIndex = 1;
+            this.btnSil.ImageList = this.ımageList1;
+            this.btnSil.Location = new System.Drawing.Point(137, 166);
             this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(100, 43);
+            this.btnSil.Size = new System.Drawing.Size(79, 43);
             this.btnSil.TabIndex = 23;
             this.btnSil.Text = "Sil";
-            this.btnSil.UseVisualStyleBackColor = true;
+            this.btnSil.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSil.UseVisualStyleBackColor = false;
             this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // txtTcAra
@@ -175,6 +195,7 @@ namespace StokTakipOtomasyon
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Silver;
             this.label6.Location = new System.Drawing.Point(376, 13);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(40, 13);
@@ -183,20 +204,35 @@ namespace StokTakipOtomasyon
             // 
             // btnIptal
             // 
-            this.btnIptal.Location = new System.Drawing.Point(116, 260);
+            this.btnIptal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnIptal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnIptal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnIptal.ImageIndex = 2;
+            this.btnIptal.ImageList = this.ımageList1;
+            this.btnIptal.Location = new System.Drawing.Point(137, 215);
             this.btnIptal.Name = "btnIptal";
-            this.btnIptal.Size = new System.Drawing.Size(100, 43);
+            this.btnIptal.Size = new System.Drawing.Size(79, 43);
             this.btnIptal.TabIndex = 26;
             this.btnIptal.Text = "İptal";
-            this.btnIptal.UseVisualStyleBackColor = true;
+            this.btnIptal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnIptal.UseVisualStyleBackColor = false;
             this.btnIptal.Click += new System.EventHandler(this.btnIptal_Click);
+            // 
+            // ımageList1
+            // 
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "refresh+reload+update+icon-1320191166843452904.png");
+            this.ımageList1.Images.SetKeyName(1, "indir (2).png");
+            this.ımageList1.Images.SetKeyName(2, "indir (1).jpg");
             // 
             // MusteriListelefrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(680, 335);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(721, 272);
             this.Controls.Add(this.btnIptal);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtTcAra);
@@ -241,5 +277,6 @@ namespace StokTakipOtomasyon
         private System.Windows.Forms.TextBox txtTcAra;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnIptal;
+        private System.Windows.Forms.ImageList ımageList1;
     }
 }
