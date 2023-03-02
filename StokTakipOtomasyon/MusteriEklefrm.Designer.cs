@@ -29,6 +29,8 @@ namespace StokTakipOtomasyon
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MusteriEklefrm));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,11 +43,13 @@ namespace StokTakipOtomasyon
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.btnEkle = new System.Windows.Forms.Button();
             this.btnIptal = new System.Windows.Forms.Button();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Silver;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(89, 53);
             this.label1.Name = "label1";
@@ -57,6 +61,7 @@ namespace StokTakipOtomasyon
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Silver;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Location = new System.Drawing.Point(47, 79);
             this.label2.Name = "label2";
@@ -67,6 +72,7 @@ namespace StokTakipOtomasyon
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Silver;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.Location = new System.Drawing.Point(61, 105);
             this.label3.Name = "label3";
@@ -77,6 +83,7 @@ namespace StokTakipOtomasyon
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Silver;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.Location = new System.Drawing.Point(71, 130);
             this.label4.Name = "label4";
@@ -87,6 +94,7 @@ namespace StokTakipOtomasyon
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Silver;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.Location = new System.Drawing.Point(70, 157);
             this.label5.Name = "label5";
@@ -131,31 +139,50 @@ namespace StokTakipOtomasyon
             // 
             // btnEkle
             // 
-            this.btnEkle.Location = new System.Drawing.Point(47, 194);
+            this.btnEkle.BackColor = System.Drawing.Color.Gray;
+            this.btnEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnEkle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEkle.ImageIndex = 0;
+            this.btnEkle.ImageList = this.ımageList1;
+            this.btnEkle.Location = new System.Drawing.Point(99, 194);
             this.btnEkle.Name = "btnEkle";
-            this.btnEkle.Size = new System.Drawing.Size(100, 43);
+            this.btnEkle.Size = new System.Drawing.Size(74, 43);
             this.btnEkle.TabIndex = 10;
             this.btnEkle.Text = "Ekle";
-            this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEkle.UseVisualStyleBackColor = false;
             this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // btnIptal
             // 
+            this.btnIptal.BackColor = System.Drawing.Color.Gray;
             this.btnIptal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnIptal.Location = new System.Drawing.Point(153, 194);
+            this.btnIptal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnIptal.ImageIndex = 1;
+            this.btnIptal.ImageList = this.ımageList1;
+            this.btnIptal.Location = new System.Drawing.Point(179, 194);
             this.btnIptal.Name = "btnIptal";
-            this.btnIptal.Size = new System.Drawing.Size(100, 43);
+            this.btnIptal.Size = new System.Drawing.Size(74, 43);
             this.btnIptal.TabIndex = 11;
             this.btnIptal.Text = "İptal";
-            this.btnIptal.UseVisualStyleBackColor = true;
+            this.btnIptal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnIptal.UseVisualStyleBackColor = false;
             this.btnIptal.Click += new System.EventHandler(this.btnIptal_Click);
+            // 
+            // ımageList1
+            // 
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "indir.png");
+            this.ımageList1.Images.SetKeyName(1, "indir (1).jpg");
             // 
             // MusteriEklefrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(304, 293);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(304, 261);
             this.Controls.Add(this.btnIptal);
             this.Controls.Add(this.btnEkle);
             this.Controls.Add(this.txtEmail);
@@ -191,5 +218,6 @@ namespace StokTakipOtomasyon
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Button btnEkle;
         private System.Windows.Forms.Button btnIptal;
+        private System.Windows.Forms.ImageList ımageList1;
     }
 }
